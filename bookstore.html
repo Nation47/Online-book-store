@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bookstore.css">
+    <title>New Book-Store</title>
+</head>
+<body>
+    <div class="main">
+        <nav class="nav">
+            <h1 class="logo">OBS</h1>
+            <span class="nav-list">
+                <a href="/" class="list">books</a>
+                <a href="/add.html" class="list">add</a>
+                <a href="/" class="list">cart</a>
+                <a href="/" class="list">about</a>
+                <a href="/" class="list">contact</a>
+            </span>
+
+        </nav>
+        <div class="sidebar">
+            <ul class="sidelist">
+                <li class="sidelink"><a href="/">Your favorite</a></li>
+                <li class="sidelink"><a href="/">your list</a></li>
+                <li class="sidelink"><a href="/">your collection</a></li>
+            </ul>
+        </div>
+        <div class="product">
+            
+        </div>
+        <div class="container">
+            <h1 class="header">
+                online<span style="color: rgb(29, 168, 181);">Book</span>Store
+            </h1>
+            <div class="msg"></div>
+            <form class="inputs" id="form">
+                <label for="title" >title</label>
+                <input type="text" id="title">
+
+                <label for="author" >author</label>
+                <input type="text" id="author">
+
+                <label for="Genre" >Genre</label>
+                <input type="text" id="genre">
+
+                <label for="price" >price $</label>
+                <input type="text" id="price">
+
+                <button type="submit" class="btn">add book</button>
+            </form>
+            <div class="store">
+              <table class="table">
+                <thead>
+                    <tr>
+                        <th>title</th>
+                        <th>author</th>
+                        <th>Genre</th>
+                        <th>Price</th>
+                        <th></th>
+                    </tr>
+                    <tbody class="booklist"></tbody>
+
+                </thead>
+              </table>
+            </div>
+        </div>
+
+    </div>
+    <script src="bookstore.js"></script>
+</body>
+</html>
